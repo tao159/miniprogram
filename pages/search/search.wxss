@@ -1,0 +1,6 @@
+/* pages/search/search.wxss */
+
+.searchbar {
+    background-color: #4ebe57;
+    padding: 20rpx;
+}

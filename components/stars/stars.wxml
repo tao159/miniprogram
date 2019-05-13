@@ -1,0 +1,7 @@
+<!--components/stars/stars.wxml-->
+<view class="rate-group">
+    <image wx:for="{{lightArr}}" wx:key="*this" src="/images/star_full.png" style="width:{{starSize}}rpx;height:{{starSize}}rpx;"></image>
+    <image wx:for="{{hrefArr}}" wx:key="*this" src="/images/star_href.png" style="width:{{starSize}}rpx;height:{{starSize}}rpx;"></image>
+    <image wx:for="{{grayArr}}" wx:key="*this" src="/images/star.png" style="width:{{starSize}}rpx;height:{{starSize}}rpx;"></image>
+    <text style="font-size:{{fontSize}}rpx;color:{{fontColor}}">{{rateText}}</text>
+</view>
