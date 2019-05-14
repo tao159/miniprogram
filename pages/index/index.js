@@ -1,4 +1,4 @@
-import { methods } from 'api.js';
+import { methods } from '../../utils/api.js';
 Page({
     data: {
 

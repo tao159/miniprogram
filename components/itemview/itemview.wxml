@@ -1,0 +1,9 @@
+<navigator class="item-navigator">
+    <view class="item-group">
+        <view class="thumbnail-group">
+            <image class="thumbnail" src="{{item.cover.url}}"></image>
+        </view>
+        <text class="item-title">{{item.title}}</text>
+        <stars rate='{{item.rating.value}}'></stars>
+    </view>
+</navigator>

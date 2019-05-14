@@ -1,17 +1,9 @@
 <view class="module-group">
     <view class="module-top">
         <text class="module-title">{{title}}</text>
-        <navigator url="{{url}}" class="module-more" target="" url="">更多</navigator>
+        <navigator url="{{moreurl}}" class="module-more" target="">更多</navigator>
     </view>
     <scroll-view class="module-scroll-view" scroll-x>
-        <navigator wx:for="{{items}}" wx:key="{{item.index}}" class="item-navigator">
-            <view class="item-group">
-                <view class="thumbnail-group">
-                    <image class="thumbnail" src="{{item.cover.url}}"></image>
-                </view>
-                <text class="item-title">{{item.title}}</text>
-                <stars rate='{{item.rating.value}}'></stars>
-            </view>
-        </navigator>
+        <itemview wx:for='{{items}}' wx:key='{{item.title}}' item='{{item}}'></itemview>
     </scroll-view>
 </view>
